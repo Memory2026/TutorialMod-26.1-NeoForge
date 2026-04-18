@@ -1,7 +1,8 @@
 {
-  "itemGroup.tutorial": "Example Mod Tab",
-  "block.tutorial.example_block": "Example Block",
-  "item.tutorial.example_item": "Example Item",
+  "item.tutorial.ice_ether": "Ice Ether",
+  "item.tutorial.ice_ether": "Raw Ice Ether",
+
+  "item.tutorial.ice_ether": "Cardboard",
 
   "tutorial.configuration.title": "Tutorial Mod Configs",
   "tutorial.configuration.section.tutorial.common.toml": "Tutorial Mod Configs",

@@ -1,6 +1,7 @@
 package com.xingci.tutorial.item;
 
 import com.xingci.tutorial.TutorialMod;
+import com.xingci.tutorial.TutorialModClient;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.EventBus;
 import net.neoforged.bus.api.IEventBus;
@@ -21,5 +22,6 @@ public class ModItems {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+        TutorialMod.LOGGER.info("registering Mod Items for " + TutorialMod.MOD_ID);
     }
 }
