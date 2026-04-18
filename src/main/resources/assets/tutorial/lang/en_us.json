@@ -4,6 +4,8 @@
 
   "item.tutorial.ice_ether": "Cardboard",
 
+  "itemGroup.raw_ice_ether": "Raw Ice Ether Tab",
+
   "tutorial.configuration.title": "Tutorial Mod Configs",
   "tutorial.configuration.section.tutorial.common.toml": "Tutorial Mod Configs",
   "tutorial.configuration.section.tutorial.common.toml.title": "Tutorial Mod Configs",
