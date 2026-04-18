@@ -22,8 +22,7 @@ public class ModBlocks {
                     () -> BlockBehaviour.Properties.ofFullCopy(Blocks.STONE),true);
     public static final DeferredBlock<Block> RAW_ICE_ETHER_BLOCK =
             registerBlock("raw_ice_ether_block",
-                    properties -> new Block(properties.strength(1.0F, 3.0F)
-                            .requiresCorrectToolForDrops()),true);
+                    properties -> new Block(properties.strength(1.0F, 3.0F)),true);
 
     public static final DeferredBlock<Block> ICE_ETHER_ORE =
             registerBlock("ice_ether_ore",
