@@ -1,6 +1,7 @@
 package com.xingci.tutorial.item;
 
 import com.xingci.tutorial.TutorialMod;
+import com.xingci.tutorial.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,11 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.ICE_Ether);
                         output.accept(ModItems.Raw_Ice_Ether);
+
+                        output.accept(ModBlocks.ICE_ETHER_ORE);
+
+                        output.accept(ModBlocks.ICE_ETHER_BLOCK);
+                        output.accept(ModBlocks.RAW_ICE_ETHER_BLOCK);
 
                         output.accept(ModItems.CARDBOARD);
                     }).build());

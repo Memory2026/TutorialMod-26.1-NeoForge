@@ -1,5 +1,6 @@
 package com.xingci.tutorial;
 
+import com.xingci.tutorial.block.ModBlocks;
 import com.xingci.tutorial.item.ModCreativeModeTabs;
 import com.xingci.tutorial.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
