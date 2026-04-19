@@ -24,6 +24,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICE_ETHER);
                         output.accept(ModItems.RAW_ICE_ETHER);
 
+                        output.accept(ModItems.ANTHRACITE);
+                        output.accept(ModItems.ANTHRACITE2);
+
+                        output.accept(ModItems.PROSPECTOR);
+
                         output.accept(ModItems.CARDBOARD);
 
                         output.accept(ModItems.CORN);

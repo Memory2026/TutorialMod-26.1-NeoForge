@@ -15,6 +15,12 @@ public class ModEnUsLangProvider extends LanguageProvider {
     protected void addTranslations() {
         add(ModItems.ICE_ETHER.get(), "Ice Ether");
         add(ModItems.RAW_ICE_ETHER.get(), "raw Ice ether");
+
+        add(ModItems.ANTHRACITE.get(), "Anthracite");
+        add(ModItems.ANTHRACITE2.get(), "Anthracite2");
+
+        add(ModItems.PROSPECTOR.get(), "Prospector");
+
         add(ModItems.CARDBOARD.get(), "Cardboard");
 
         add(ModItems.CORN.get(), "Corn");

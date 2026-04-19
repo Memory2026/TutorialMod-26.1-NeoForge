@@ -23,6 +23,12 @@ public class ModModelsProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.ICE_ETHER.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RAW_ICE_ETHER.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.ANTHRACITE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.ANTHRACITE2.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.PROSPECTOR.get(), ModelTemplates.FLAT_ITEM);
+
         itemModels.generateFlatItem(ModItems.CARDBOARD.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.CORN.get(), ModelTemplates.FLAT_ITEM);

@@ -15,6 +15,12 @@ public class ModZhCnLangProvider extends LanguageProvider {
     protected void addTranslations() {
         add(ModItems.ICE_ETHER.get(), "冰之精气");
         add(ModItems.RAW_ICE_ETHER.get(), "冰魄精粹");
+
+        add(ModItems.ANTHRACITE.get(), "无烟煤");
+        add(ModItems.ANTHRACITE2.get(), "无烟煤2");
+
+        add(ModItems.PROSPECTOR.get(), "探矿师");
+
         add(ModItems.CARDBOARD.get(), "硬纸板");
 
         add(ModItems.CORN.get(), "玉米");
