@@ -20,8 +20,8 @@ public class TutorialModDataGenerator {
                 )), lookupProvider)));
 
         event.createProvider(ModRecipesProvider.Runner::new);
-        event.createProvider(ModBlocktagsProvider::new);
-        event.createProvider(ModItemtagsProvider::new);
+        event.createProvider(ModBlockTagsProvider::new);
+        event.createProvider(ModItemTagsProvider::new);
         event.createProvider(ModEnUsLangProvider::new);
         event.createProvider(ModZhCnLangProvider::new);
         event.createProvider(ModModelsProvider::new);

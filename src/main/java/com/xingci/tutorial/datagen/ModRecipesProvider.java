@@ -3,6 +3,7 @@ package com.xingci.tutorial.datagen;
 import com.xingci.tutorial.TutorialMod;
 import com.xingci.tutorial.block.ModBlocks;
 import com.xingci.tutorial.item.ModItems;
+import com.xingci.tutorial.tag.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -40,8 +41,8 @@ public class ModRecipesProvider extends RecipeProvider {
 
         shaped(RecipeCategory.FOOD, Items.SUGAR, 3)
                 .pattern("###")
-                .define('#', Items.BEETROOT)
-                .unlockedBy("has_beetroot", has(Items.BEETROOT))
+                .define('#', ModItemTags.SUGAR_TAG)
+                .unlockedBy("has_beetroot", has(ModItemTags.SUGAR_TAG))
                 .save(output, TutorialMod.MOD_ID + ":sugar_from_beetroot");
         shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_ORE)
                 .requires(ModItems.RAW_ICE_ETHER)

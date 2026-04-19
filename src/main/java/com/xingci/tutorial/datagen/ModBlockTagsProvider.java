@@ -2,6 +2,7 @@ package com.xingci.tutorial.datagen;
 
 import com.xingci.tutorial.TutorialMod;
 import com.xingci.tutorial.block.ModBlocks;
+import com.xingci.tutorial.tag.ModBlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -9,8 +10,8 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModBlocktagsProvider extends BlockTagsProvider {
-    public ModBlocktagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+public class ModBlockTagsProvider extends BlockTagsProvider {
+    public ModBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider, TutorialMod.MOD_ID);
     }
 
@@ -21,6 +22,17 @@ public class ModBlocktagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.ICE_ETHER_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.ICE_ETHER_ORE.get());
+
+        tag(ModBlockTags.ORE_TAGS)
+                .addTag(BlockTags.COAL_ORES)
+                .addTag(BlockTags.IRON_ORES)
+                .addTag(BlockTags.GOLD_ORES)
+                .addTag(BlockTags.LAPIS_ORES)
+                .addTag(BlockTags.COPPER_ORES)
+                .addTag(BlockTags.DIAMOND_ORES)
+                .addTag(BlockTags.EMERALD_ORES)
+                .addTag(BlockTags.REDSTONE_ORES)
                 .add(ModBlocks.ICE_ETHER_ORE.get());
     }
 }
