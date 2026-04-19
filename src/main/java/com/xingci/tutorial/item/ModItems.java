@@ -12,9 +12,9 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(TutorialMod.MOD_ID);
 
-    public static final DeferredItem<Item> ICE_Ether =
+    public static final DeferredItem<Item> ICE_ETHER =
             ITEMS.registerSimpleItem("ice_ether");
-    public static final DeferredItem<Item> Raw_Ice_Ether =
+    public static final DeferredItem<Item> RAW_ICE_ETHER =
             ITEMS.registerSimpleItem("raw_ice_ether");
 
     public static final DeferredItem<Item> CARDBOARD =

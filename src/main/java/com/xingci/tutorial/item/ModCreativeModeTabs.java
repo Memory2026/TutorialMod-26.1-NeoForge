@@ -19,10 +19,10 @@ public class ModCreativeModeTabs {
             CREATIVE_MODE_TABS.register("raw_ice_ether_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.raw_ice_ether"))
                     .withTabsBefore(CreativeModeTabs.COMBAT)
-                    .icon(() -> new ItemStack(ModItems.ICE_Ether.get()))
+                    .icon(() -> new ItemStack(ModItems.ICE_ETHER.get()))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModItems.ICE_Ether);
-                        output.accept(ModItems.Raw_Ice_Ether);
+                        output.accept(ModItems.ICE_ETHER);
+                        output.accept(ModItems.RAW_ICE_ETHER);
 
                         output.accept(ModBlocks.ICE_ETHER_ORE);
 
