@@ -5,6 +5,7 @@ import com.xingci.tutorial.TutorialModClient;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.EventBus;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -19,6 +20,16 @@ public class ModItems {
 
     public static final DeferredItem<Item> CARDBOARD =
             ITEMS.registerSimpleItem("material/cardboard");
+
+    public static final DeferredItem<Item> CORN =
+            ITEMS.registerSimpleItem("corn",
+                    () -> new Item.Properties().food(ModFoods.CORN));
+    public static final DeferredItem<Item> STRAWBERRY =
+            ITEMS.registerSimpleItem("strawberry",
+                    () -> new Item.Properties().food(ModFoods.STRAWBERRY, ModConsumables.STRAWBERRY));
+    public static final DeferredItem<Item> CHEESE =
+            ITEMS.registerSimpleItem("cheese",
+                    () -> new Item.Properties().food(ModFoods.CHEESE, ModConsumables.CHEESE));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

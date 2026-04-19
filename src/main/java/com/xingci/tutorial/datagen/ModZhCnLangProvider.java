@@ -17,6 +17,10 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModItems.RAW_ICE_ETHER.get(), "冰魄精粹");
         add(ModItems.CARDBOARD.get(), "硬纸板");
 
+        add(ModItems.CORN.get(), "玉米");
+        add(ModItems.CHEESE.get(), "奶酪");
+        add(ModItems.STRAWBERRY.get(), "草莓");
+
         add(ModBlocks.ICE_ETHER_ORE.get(), "极光冰元素结晶");
 
         add(ModBlocks.ICE_ETHER_BLOCK.get(), "冰以太块");

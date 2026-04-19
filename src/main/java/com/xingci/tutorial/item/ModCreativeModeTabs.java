@@ -24,12 +24,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICE_ETHER);
                         output.accept(ModItems.RAW_ICE_ETHER);
 
+                        output.accept(ModItems.CARDBOARD);
+
+                        output.accept(ModItems.CORN);
+                        output.accept(ModItems.CHEESE);
+                        output.accept(ModItems.STRAWBERRY);
+
                         output.accept(ModBlocks.ICE_ETHER_ORE);
 
                         output.accept(ModBlocks.ICE_ETHER_BLOCK);
                         output.accept(ModBlocks.RAW_ICE_ETHER_BLOCK);
-
-                        output.accept(ModItems.CARDBOARD);
                     }).build());
 
     public static void register(IEventBus eventBus) {
