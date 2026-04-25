@@ -17,6 +17,7 @@ import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.fml.common.Mod;
 
 import java.util.Set;
 
@@ -29,6 +30,24 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.ICE_ETHER_BLOCK.get());
         dropSelf(ModBlocks.RAW_ICE_ETHER_BLOCK.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_STAIRS.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_BUTTON.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_PRESSURE_PLATE.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_WALL.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_FENCE_GATE.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_FENCE.get());
+
+        dropSelf(ModBlocks.ICE_ETHER_TRAPDOOR.get());
+
+        add(ModBlocks.ICE_ETHER_DOOR.get(), createDoorTable(ModBlocks.ICE_ETHER_DOOR.get()));
+
+        add(ModBlocks.ICE_ETHER_SLAB.get(), createSlabItemTable(ModBlocks.ICE_ETHER_SLAB.get()));
 
         add(ModBlocks.ICE_ETHER_ORE.get(), createCopperOreLikeDrops(ModBlocks.ICE_ETHER_ORE.get(), ModItems.RAW_ICE_ETHER.get()));
     }

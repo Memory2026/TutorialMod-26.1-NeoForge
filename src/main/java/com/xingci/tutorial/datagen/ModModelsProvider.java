@@ -35,9 +35,21 @@ public class ModModelsProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.CHEESE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STRAWBERRY.get(), ModelTemplates.FLAT_ITEM);
 
+
+//        blockModels.createTrivialCube(ModBlocks.ICE_ETHER_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.ICE_ETHER_ORE.get());
-        blockModels.createTrivialCube(ModBlocks.ICE_ETHER_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.RAW_ICE_ETHER_BLOCK.get());
+
+        blockModels.family(ModBlocks.ICE_ETHER_BLOCK.get())
+                .slab(ModBlocks.ICE_ETHER_SLAB.get())
+                .wall(ModBlocks.ICE_ETHER_WALL.get())
+                .door(ModBlocks.ICE_ETHER_DOOR.get())
+                .fence(ModBlocks.ICE_ETHER_FENCE.get())
+                .stairs(ModBlocks.ICE_ETHER_STAIRS.get())
+                .button(ModBlocks.ICE_ETHER_BUTTON.get())
+                .fenceGate(ModBlocks.ICE_ETHER_FENCE_GATE.get())
+                .pressurePlate(ModBlocks.ICE_ETHER_PRESSURE_PLATE.get())
+                .trapdoor(ModBlocks.ICE_ETHER_TRAPDOOR.get());
     }
 
     @Override

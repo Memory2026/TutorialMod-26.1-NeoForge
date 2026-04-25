@@ -1,6 +1,10 @@
 package com.xingci.tutorial;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.item.properties.select.ItemBlockState;
+import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty;
+import net.minecraft.util.datafix.fixes.ItemBannerColorFix;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
