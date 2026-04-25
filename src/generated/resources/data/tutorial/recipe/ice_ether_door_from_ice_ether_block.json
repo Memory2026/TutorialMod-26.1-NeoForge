@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": "tutorial:ice_ether_block"
+  },
+  "pattern": [
+    "AA ",
+    "AA ",
+    "AA "
+  ],
+  "result": {
+    "count": 9,
+    "id": "tutorial:ice_ether_door"
+  }
+}

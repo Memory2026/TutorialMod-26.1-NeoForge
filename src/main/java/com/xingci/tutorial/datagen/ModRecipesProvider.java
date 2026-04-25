@@ -3,6 +3,7 @@ package com.xingci.tutorial.datagen;
 import com.xingci.tutorial.TutorialMod;
 import com.xingci.tutorial.block.ModBlocks;
 import com.xingci.tutorial.item.ModItems;
+import com.xingci.tutorial.tag.ModBlockTags;
 import com.xingci.tutorial.tag.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -44,6 +45,82 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('#', ModItemTags.SUGAR_TAG)
                 .unlockedBy("has_beetroot", has(ModItemTags.SUGAR_TAG))
                 .save(output, TutorialMod.MOD_ID + ":sugar_from_beetroot");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_SLAB, 9)
+                .pattern("###")
+                .define('#', ModBlocks.ICE_ETHER_BLOCK)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_slab_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_STAIRS, 8)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', ModBlocks.ICE_ETHER_BLOCK)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_stairs_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_FENCE, 12)
+                .pattern("ABA")
+                .pattern("ABA")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .define('B', ModItems.ICE_ETHER)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_fence_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_FENCE_GATE, 12)
+                .pattern("BAB")
+                .pattern("BAB")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .define('B', ModItems.ICE_ETHER)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_fence_gate_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_DOOR, 9)
+                .pattern("AA ")
+                .pattern("AA ")
+                .pattern("AA ")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_door_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_TRAPDOOR, 32)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_trapdoor_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_WALL, 8)
+                .pattern("BBB")
+                .pattern("AAA")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .define('B', ModItems.ICE_ETHER)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_wall_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_PRESSURE_PLATE, 10)
+                .pattern("AA ")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_pressure_plate_from_ice_ether_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_BUTTON, 32)
+                .pattern(" A ")
+                .define('A', ModBlocks.ICE_ETHER_BLOCK)
+                .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
+                .save(output, TutorialMod.MOD_ID + ":ice_ether_button_from_ice_ether_block");
+
+        shaped(RecipeCategory.TOOLS, ModItems.PROSPECTOR.get())
+                .pattern("SDS")
+                .pattern("SSS")
+                .pattern("SGS")
+                .define('S', Ingredient.of(Items.STONE))
+                .define('D', Ingredient.of(Items.DIAMOND))
+                .define('G', Ingredient.of(Items.GOLD_INGOT))
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .save(output);
+
         shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_ORE)
                 .requires(ModItems.RAW_ICE_ETHER)
                 .requires(Items.STONE)
@@ -53,6 +130,7 @@ public class ModRecipesProvider extends RecipeProvider {
 
         simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new, 600,
                 ModItems.RAW_ICE_ETHER, ModItems.ICE_ETHER, 0.75f);
+
     }
 
     protected <T extends AbstractCookingRecipe> void simpleCookingRecipe(

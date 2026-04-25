@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": "minecraft:diamond",
+    "G": "minecraft:gold_ingot",
+    "S": "minecraft:stone"
+  },
+  "pattern": [
+    "SDS",
+    "SSS",
+    "SGS"
+  ],
+  "result": {
+    "id": "tutorial:prospector"
+  }
+}
