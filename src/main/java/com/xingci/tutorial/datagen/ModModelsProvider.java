@@ -22,12 +22,19 @@ public class ModModelsProvider extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.ICE_ETHER.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.FIRE_ETHER.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RAW_ICE_ETHER.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.ANTHRACITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ANTHRACITE2.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.PROSPECTOR.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.FIRE_ETHER_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.FIRE_ETHER_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.FIRE_ETHER_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.FIRE_ETHER_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.FIRE_ETHER_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         itemModels.generateFlatItem(ModItems.CARDBOARD.get(), ModelTemplates.FLAT_ITEM);
 

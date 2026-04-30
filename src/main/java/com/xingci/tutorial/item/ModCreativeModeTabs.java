@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> new ItemStack(ModItems.ICE_ETHER.get()))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModItems.FIRE_ETHER);
                         output.accept(ModItems.ICE_ETHER);
                         output.accept(ModItems.RAW_ICE_ETHER);
 
@@ -28,6 +29,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ANTHRACITE2);
 
                         output.accept(ModItems.PROSPECTOR);
+
+                        output.accept(ModItems.FIRE_ETHER_AXE);
+                        output.accept(ModItems.FIRE_ETHER_HOE);
+                        output.accept(ModItems.FIRE_ETHER_SWORD);
+                        output.accept(ModItems.FIRE_ETHER_SHOVEL);
+                        output.accept(ModItems.FIRE_ETHER_PICKAXE);
 
                         output.accept(ModItems.CARDBOARD);
 

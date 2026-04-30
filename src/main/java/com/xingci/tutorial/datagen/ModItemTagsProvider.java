@@ -20,5 +20,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModItemTags.SUGAR_TAG)
                 .add(Items.BEETROOT)
                 .add(ModItems.STRAWBERRY.get());
+
+        tag(ModItemTags.FIRE_ETHER_TOOL_MATERIALS)
+                .add(ModItems.FIRE_ETHER.get());
     }
 }

@@ -14,12 +14,19 @@ public class ModEnUsLangProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add(ModItems.ICE_ETHER.get(), "Ice Ether");
+        add(ModItems.FIRE_ETHER.get(), "Fire Ether");
         add(ModItems.RAW_ICE_ETHER.get(), "raw Ice ether");
 
         add(ModItems.ANTHRACITE.get(), "Anthracite");
         add(ModItems.ANTHRACITE2.get(), "Anthracite2");
 
         add(ModItems.PROSPECTOR.get(), "Prospector");
+
+        add(ModItems.FIRE_ETHER_HOE.get(), "Fire Ether Hoe");
+        add(ModItems.FIRE_ETHER_AXE.get(), "Fire Ether Axe");
+        add(ModItems.FIRE_ETHER_SWORD.get(), "Fire Ether Sword");
+        add(ModItems.FIRE_ETHER_SHOVEL.get(), "Fire Ether Shovel");
+        add(ModItems.FIRE_ETHER_PICKAXE.get(), "Fire Ether Pickaxe");
 
         add(ModItems.CARDBOARD.get(), "Cardboard");
 
@@ -28,21 +35,13 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.STRAWBERRY.get(), "Strawberry");
 
         add(ModBlocks.ICE_ETHER_WALL.get(), "Ice Ether Wall");
-
         add(ModBlocks.ICE_ETHER_DOOR.get(),  "Ice Ether Door");
-
         add(ModBlocks.ICE_ETHER_SLAB.get(),  "Ice Ether Slab");
-
         add(ModBlocks.ICE_ETHER_FENCE.get(),  "Ice Ether Fence");
-
         add(ModBlocks.ICE_ETHER_STAIRS.get(),  "Ice Ether Stairs");
-
         add(ModBlocks.ICE_ETHER_BUTTON.get(),  "Ice Ether Button");
-
         add(ModBlocks.ICE_ETHER_TRAPDOOR.get(),  "Ice Ether Trapdoor");
-
         add(ModBlocks.ICE_ETHER_FENCE_GATE.get(),  "Ice Ether Fence Gate");
-
         add(ModBlocks.ICE_ETHER_PRESSURE_PLATE.get(),  "Ice Ether Pressure Plate");
 
         add(ModBlocks.ICE_ETHER_ORE.get(), "Ice Ether Ore");
