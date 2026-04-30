@@ -27,5 +27,7 @@
   "item.tutorial.prospector": "探矿师",
   "item.tutorial.raw_ice_ether": "冰魄精粹",
   "item.tutorial.strawberry": "草莓",
-  "itemGroup.raw_ice_ether": "冰魄精粹材料"
+  "itemGroup.raw_ice_ether": "冰魄精粹材料",
+  "tooltip.rawiceether.pickaxe_axe_tooltip": "按住 §6§l§oShift§r§r§r 获取更多信息!",
+  "tooltip.rawiceether.pickaxe_axe_tooltip.shift": "这是一个既可以作为镐使用，也可以作为斧头使用的物品"
 }

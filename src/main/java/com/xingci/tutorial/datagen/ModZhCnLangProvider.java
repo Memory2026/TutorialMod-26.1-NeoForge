@@ -52,5 +52,8 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModBlocks.RAW_ICE_ETHER_BLOCK.get(), "天然冰晶能量块");
 
         add("itemGroup.raw_ice_ether", "冰魄精粹材料");
+
+        add("tooltip.rawiceether.pickaxe_axe_tooltip.shift", "这是一个既可以作为镐使用，也可以作为斧头使用的物品");
+        add("tooltip.rawiceether.pickaxe_axe_tooltip", "按住 §6§l§oShift§r§r§r 获取更多信息!");
     }
 }

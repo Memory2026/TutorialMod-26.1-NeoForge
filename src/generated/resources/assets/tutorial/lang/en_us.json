@@ -27,5 +27,7 @@
   "item.tutorial.prospector": "Prospector",
   "item.tutorial.raw_ice_ether": "raw Ice ether",
   "item.tutorial.strawberry": "Strawberry",
-  "itemGroup.raw_ice_ether": "Raw Ice Ether Tab"
+  "itemGroup.raw_ice_ether": "Raw Ice Ether Tab",
+  "tooltip.rawiceether.pickaxe_axe_tooltip": "Hold §6§l§oShift§r§r§r for more info!",
+  "tooltip.rawiceether.pickaxe_axe_tooltip.shift": "This is a item that can be used as a pickaxe and an axe"
 }

@@ -52,5 +52,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.RAW_ICE_ETHER_BLOCK.get(), "Raw Ice Ether Block");
 
         add("itemGroup.raw_ice_ether", "Raw Ice Ether Tab");
+
+        add("tooltip.rawiceether.pickaxe_axe_tooltip.shift", "This is a item that can be used as a pickaxe and an axe");
+        add("tooltip.rawiceether.pickaxe_axe_tooltip", "Hold §6§l§oShift§r§r§r for more info!");
     }
 }
