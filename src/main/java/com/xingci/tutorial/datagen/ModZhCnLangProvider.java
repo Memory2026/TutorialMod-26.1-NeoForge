@@ -28,6 +28,8 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModItems.FIRE_ETHER_HOE.get(), "烈焰以太锄");
         add(ModItems.FIRE_ETHER_PICKAXE.get(), "烈焰虚空镐");
 
+        add(ModItems.PICKAXE_AXE_ITEM.get(), "镐&斧");
+
         add(ModBlocks.ICE_ETHER_WALL.get(), "极冻能量墙");
         add(ModBlocks.ICE_ETHER_DOOR.get(),  "寒冰虚空之门");
         add(ModBlocks.ICE_ETHER_SLAB.get(),  "冰晶以太石板");

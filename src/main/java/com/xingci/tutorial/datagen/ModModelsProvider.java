@@ -36,6 +36,8 @@ public class ModModelsProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.FIRE_ETHER_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.FIRE_ETHER_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
+        itemModels.generateFlatItem(ModItems.PICKAXE_AXE_ITEM.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
         itemModels.generateFlatItem(ModItems.CARDBOARD.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.CORN.get(), ModelTemplates.FLAT_ITEM);

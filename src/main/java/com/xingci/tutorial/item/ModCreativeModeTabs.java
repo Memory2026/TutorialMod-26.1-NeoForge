@@ -26,7 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_ICE_ETHER);
 
                         output.accept(ModItems.ANTHRACITE);
-                        output.accept(ModItems.ANTHRACITE2);
+//                        output.accept(ModItems.ANTHRACITE2);
 
                         output.accept(ModItems.PROSPECTOR);
 
@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRE_ETHER_SWORD);
                         output.accept(ModItems.FIRE_ETHER_SHOVEL);
                         output.accept(ModItems.FIRE_ETHER_PICKAXE);
+
+                        output.accept(ModItems.PICKAXE_AXE_ITEM);
 
                         output.accept(ModItems.CARDBOARD);
 
