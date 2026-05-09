@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "tutorial:fire_ether",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    " AA",
+    " BA",
+    " B "
+  ],
+  "result": {
+    "id": "tutorial:fire_ether_axe"
+  }
+}

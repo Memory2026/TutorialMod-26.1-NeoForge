@@ -3,7 +3,6 @@ package com.xingci.tutorial.datagen;
 import com.xingci.tutorial.TutorialMod;
 import com.xingci.tutorial.block.ModBlocks;
 import com.xingci.tutorial.item.ModItems;
-import com.xingci.tutorial.tag.ModBlockTags;
 import com.xingci.tutorial.tag.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +16,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import org.jspecify.annotations.Nullable;
 
 import java.util.List;
@@ -45,6 +45,8 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('#', ModItemTags.SUGAR_TAG)
                 .unlockedBy("has_beetroot", has(ModItemTags.SUGAR_TAG))
                 .save(output, TutorialMod.MOD_ID + ":sugar_from_beetroot");
+
+
 
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_SLAB, 9)
                 .pattern("###")
@@ -111,6 +113,8 @@ public class ModRecipesProvider extends RecipeProvider {
                 .unlockedBy("has_ice_ether_block", has(ModBlocks.ICE_ETHER_BLOCK))
                 .save(output, TutorialMod.MOD_ID + ":ice_ether_button_from_ice_ether_block");
 
+
+
         shaped(RecipeCategory.TOOLS, ModItems.PROSPECTOR.get())
                 .pattern("SDS")
                 .pattern("SSS")
@@ -120,6 +124,76 @@ public class ModRecipesProvider extends RecipeProvider {
                 .define('G', Ingredient.of(Items.GOLD_INGOT))
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .save(output);
+
+
+
+        shaped(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_AXE.get())
+                .pattern(" AA")
+                .pattern(" BA")
+                .pattern(" B ")
+                .define('A', Ingredient.of(ModItems.FIRE_ETHER))
+                .define('B', Ingredient.of(Items.STICK))
+                .unlockedBy("has_fire_ether", has(ModItems.FIRE_ETHER))
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_HOE.get())
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', Ingredient.of(ModItems.FIRE_ETHER))
+                .define('B', Ingredient.of(Items.STICK))
+                .unlockedBy("has_fire_ether", has(ModItems.FIRE_ETHER))
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', Ingredient.of(ModItems.FIRE_ETHER))
+                .define('B', Ingredient.of(Items.STICK))
+                .unlockedBy("has_fire_ether", has(ModItems.FIRE_ETHER))
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', Ingredient.of(ModItems.FIRE_ETHER))
+                .define('B', Ingredient.of(Items.STICK))
+                .unlockedBy("has_fire_ether", has(ModItems.FIRE_ETHER))
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', Ingredient.of(ModItems.FIRE_ETHER))
+                .define('B', Ingredient.of(Items.STICK))
+                .unlockedBy("has_fire_ether", has(ModItems.FIRE_ETHER))
+                .save(output);
+
+
+
+        shaped(RecipeCategory.TOOLS, ModItems.PICKAXE_AXE_ITEM.get())
+                .pattern("AB")
+                .define('A', Ingredient.of(ModItems.FIRE_ETHER_PICKAXE))
+                .define('B', Ingredient.of(ModItems.FIRE_ETHER_AXE))
+                .unlockedBy("has_fire_ether_axe", has(ModItems.FIRE_ETHER_AXE))
+                .save(output);
+
+
+
+        shaped(RecipeCategory.TOOLS, ModItems.FIRE_ETHER.get())
+                .pattern("SDS")
+                .pattern("SGS")
+                .pattern("SSS")
+                .define('S', Ingredient.of(ModItems.ICE_ETHER))
+                .define('D', Ingredient.of(Items.CAMPFIRE))
+                .define('G', Ingredient.of(Blocks.NETHERRACK))
+                .unlockedBy("has_ice_ether", has(ModItems.ICE_ETHER))
+                .save(output);
+
+
 
         shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_ORE)
                 .requires(ModItems.RAW_ICE_ETHER)

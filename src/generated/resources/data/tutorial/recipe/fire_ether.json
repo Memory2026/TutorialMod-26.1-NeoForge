@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": "minecraft:campfire",
+    "G": "minecraft:netherrack",
+    "S": "tutorial:ice_ether"
+  },
+  "pattern": [
+    "SDS",
+    "SGS",
+    "SSS"
+  ],
+  "result": {
+    "id": "tutorial:fire_ether"
+  }
+}

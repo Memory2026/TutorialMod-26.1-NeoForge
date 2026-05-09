@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fire_ether_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorial:fire_ether_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorial:pickaxe_axe_item"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fire_ether_axe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorial:pickaxe_axe_item"
+    ]
+  }
+}

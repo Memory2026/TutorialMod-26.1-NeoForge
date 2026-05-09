@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "tutorial:fire_ether_pickaxe",
+    "B": "tutorial:fire_ether_axe"
+  },
+  "pattern": [
+    "AB"
+  ],
+  "result": {
+    "id": "tutorial:pickaxe_axe_item"
+  }
+}
